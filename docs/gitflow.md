@@ -22,3 +22,21 @@ From the begining :
      b. in "Pull request" section, click "create new pull request"
      c. Sellect "compare" and "base" branch and add message for change. Click "create pull request"
      d. Review and click "Merge request"
+     
+Merge code from another branch to your branch
+
+#1 : Dev branch has some new change
+    a. Switch branch : git checkout dev
+    b. Add code "landscape page" to folder "scr"
+    
+#2 : Pull code change and merge to your branch
+    a. Pull change code to dev local : git pull
+    b. Commit code : git add .
+                     git commit -m "message"
+                     git push
+    c. Go into "Pull request" , click "new pull request"
+    d. sellect : base : working
+                 compare : dev
+       insert : pull request message
+       click "create pull request"
+    e. Review and click "Merge pull request"
